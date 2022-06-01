@@ -46,4 +46,4 @@ php artisan db:seed
 ```
 irá gerar 10 novos clientes.
 
-nesta aplicação há a collection para ser utilizada no ```Postman``` para realizar as testes desta api, basta acessar a pasta raiz, e instalar o arquivo ```DESAFIO CLIENTE.postman_collection``` e o postman ja está pronto apra os testes.
+nesta aplicação há a collection para ser utilizada no ```Postman``` para realizar as testes desta api, basta acessar a pasta raiz, e instalar o arquivo ```DESAFIO CLIENTE.postman_collection``` e o postman ja está pronto para os testes.
