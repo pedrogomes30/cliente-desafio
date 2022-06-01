@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "0b72071c-f9ab-4474-9db2-5b632b86d900",
+		"name": "DESAFIO CLIENTE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13013524"
+	},
+	"item": [
+		{
+			"name": "LISTAR CLIENTES",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/cliente",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LISTAR CLIENTE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/cliente/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"cliente",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CADASTRAR CLIENTE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Keyon\",\r\n    \"cpf\": \"89577791894\",\r\n    \"telefone\": \"12081099484\",\r\n    \"placa_carro\": \"KQG2T61\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/cliente",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ATUALIZAR CLIENTE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Keyon\",\r\n    \"cpf\": \"89577791894\",\r\n    \"telefone\": \"12081099484\",\r\n    \"placa_carro\": \"KQG2T61\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/cliente/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"cliente",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETAR CLIENTE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/cliente/11",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"cliente",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FINALIZADOS COM O Nº DA PLACA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/cliente",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "localhost:80",
+			"type": "string"
+		}
+	]
+}
